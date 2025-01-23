@@ -13,7 +13,7 @@ import { IoIosHeart } from "react-icons/io";
 import { TbCategory2 } from "react-icons/tb";
 import { MdBubbleChart } from "react-icons/md";
 
-function getIcon(icon: string) {
+export function getIcon(icon: string) {
   switch (icon) {
     case "home":
       return <GoHome className="size-7" />;
