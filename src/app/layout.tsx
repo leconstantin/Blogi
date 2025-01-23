@@ -4,7 +4,6 @@ import "./globals.css";
 import GlobalNav from "@/components/GlobalNav";
 import AddressBar from "@/components/AddressBar";
 import Byline from "@/components/Byline";
-import GlobalNave from "@/components/global";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
