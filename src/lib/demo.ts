@@ -107,19 +107,19 @@ export const navItems = [
   },
   {
     name: "Posts",
-    slug: "/posts",
+    slug: "posts",
   },
   {
     name: "Favorite",
-    slug: "/favorite",
+    slug: "favorite",
   },
   {
     name: "Create",
-    slug: "/create",
+    slug: "create",
   },
   {
     name: "Categories",
-    slug: "/categories",
+    slug: "categories",
   },
 ];
 export const profile = [
