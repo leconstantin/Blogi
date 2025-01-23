@@ -13,34 +13,12 @@ import { IoIosHeart } from "react-icons/io";
 import { TbCategory2 } from "react-icons/tb";
 import { MdBubbleChart } from "react-icons/md";
 
-export function getIcon(icon: string) {
-  switch (icon) {
-    case "home":
-      return <GoHome className="size-7" />;
-    case "posts":
-      return <CiSignpostDuo1 className="size-7" />;
-    case "create":
-      return <IoCreateOutline className="size-7" />;
-    case "favorite":
-      return <IoIosHeart className="size-7" />;
-    case "categories":
-      return <TbCategory2 className="size-7" />;
-    case "login":
-      return <CiLogin className="size-7" />;
-    case "logout":
-      return <CiLogout className="size-7" />;
-    case "profile":
-      return <CiUser className="size-7" />;
-    default:
-      return <MdBubbleChart className="size-7" />;
-  }
-}
 export default function GlobalNav() {
   const [isOpen, setIsOpen] = useState(false);
   const close = () => setIsOpen(false);
 
   return (
-    <div className="fixed top-0 z-10 flex w-full flex-col border-b border-gray-800 bg-black lg:bottom-0 lg:z-auto lg:w-72 lg:border-b-0 lg:border-r lg:border-gray-800">
+    <div className="fixed top-0 z-20 flex w-full flex-col border-b border-gray-800 bg-black lg:bottom-0 lg:z-auto lg:w-72 lg:border-b-0 lg:border-r lg:border-gray-800">
       <div className="flex h-14 items-center px-4 py-7 lg:h-auto">
         <Link
           href="/"
@@ -77,7 +55,7 @@ export default function GlobalNav() {
           hidden: !isOpen,
         })}
       >
-        <nav className="space-y-6 px-2  pt-5 flex flex-col justify-between min-h-[540px]">
+        <nav className="space-y-6 px-2 pt-5 flex flex-col justify-between min-h-[540px]">
           <div className="space-y-2">
             {navItems.map((item) => (
               <GlobalNavItem key={item.slug} item={item} close={close} />
@@ -120,4 +98,27 @@ function GlobalNavItem({
       <span> {item.name}</span>
     </Link>
   );
+}
+
+export function getIcon(icon: string) {
+  switch (icon) {
+    case "home":
+      return <GoHome className="size-7" />;
+    case "posts":
+      return <CiSignpostDuo1 className="size-7" />;
+    case "create":
+      return <IoCreateOutline className="size-7" />;
+    case "favorite":
+      return <IoIosHeart className="size-7" />;
+    case "categories":
+      return <TbCategory2 className="size-7" />;
+    case "login":
+      return <CiLogin className="size-7" />;
+    case "logout":
+      return <CiLogout className="size-7" />;
+    case "profile":
+      return <CiUser className="size-7" />;
+    default:
+      return <MdBubbleChart className="size-7" />;
+  }
 }

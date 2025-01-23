@@ -4,6 +4,7 @@ import "./globals.css";
 import GlobalNav from "@/components/GlobalNav";
 import AddressBar from "@/components/AddressBar";
 import Byline from "@/components/Byline";
+import GlobalNave from "@/components/global";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,10 +28,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="[color-scheme:dark]">
-      <body className="overflow-y-scroll bg-gray-1100 bg-[url('/grid.svg')] pb-36 relative flex flex-col">
+      <body className="overflow-y-scroll bg-gray-1100 bg-[url('/grid.svg')] pb-36">
         <GlobalNav />
 
-        <div className="lg:pl-72 relative flex-grow">
+        <div className="lg:pl-72">
           <div className="p-px shadow-lg bg-vc-border-gradient shadow-black/20 fixed right-0 w-full top-0 lg:w-[975px] z-10">
             <div className="bg-black">
               <AddressBar />
