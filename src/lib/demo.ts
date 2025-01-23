@@ -100,3 +100,35 @@ export const demos: { name: string; items: Item[] }[] = [
     ],
   },
 ];
+export const navItems = [
+  {
+    name: "Home",
+    slug: "/",
+  },
+  {
+    name: "Posts",
+    slug: "/posts",
+  },
+  {
+    name: "Favorite",
+    slug: "/favorite",
+  },
+  {
+    name: "Create",
+    slug: "/create",
+  },
+  {
+    name: "Categories",
+    slug: "/categories",
+  },
+];
+export const profile = [
+  {
+    name: "Profile",
+    slug: "profile",
+  },
+  {
+    name: "Logout",
+    slug: "logout",
+  },
+];
