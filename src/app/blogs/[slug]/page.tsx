@@ -1,12 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { AiFillDislike, AiFillLike } from "react-icons/ai";
-import {
-  FaBookmark,
-  FaCommentDots,
-  FaRegCommentDots,
-  FaShare,
-} from "react-icons/fa";
+import { FaBookmark, FaShare } from "react-icons/fa";
 import { IoReturnUpBack } from "react-icons/io5";
 export default function Page() {
   return (

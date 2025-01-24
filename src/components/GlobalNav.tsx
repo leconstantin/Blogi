@@ -5,7 +5,7 @@ import { useSelectedLayoutSegment } from "next/navigation";
 import clsx from "clsx";
 import { useState } from "react";
 import { FaBars, FaRegTrashAlt, FaTimes } from "react-icons/fa";
-import { demos, Item, navItems, profile } from "@/lib/demo";
+import { Item, navItems, profile } from "@/lib/demo";
 import { GoHome } from "react-icons/go";
 import { CiLogin, CiLogout, CiSignpostDuo1, CiUser } from "react-icons/ci";
 import { IoCreateOutline } from "react-icons/io5";

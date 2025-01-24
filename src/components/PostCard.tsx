@@ -1,12 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { AiFillDislike, AiFillLike } from "react-icons/ai";
-import {
-  FaBookmark,
-  FaCommentDots,
-  FaRegCommentDots,
-  FaShare,
-} from "react-icons/fa";
+import { FaBookmark, FaShare } from "react-icons/fa";
 export default function PostCard() {
   return (
     <div className="rounded-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20">
