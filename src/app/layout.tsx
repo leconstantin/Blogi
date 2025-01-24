@@ -38,7 +38,7 @@ export default function RootLayout({
           </div>
           <div className="mx-auto max-w-4xl space-y-8 px-2 pt-20 lg:px-8 lg:py-8 lg:pt-20">
             <div className="rounded-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20">
-              <div className="rounded-lg bg-black">{/* <AddressBar /> */}</div>
+              <div className="rounded-lg  bg-black">{/* <AddressBar /> */}</div>
             </div>
 
             <div className="rounded-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20">
