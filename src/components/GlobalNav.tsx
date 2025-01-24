@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useSelectedLayoutSegment } from "next/navigation";
 import clsx from "clsx";
 import { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaRegTrashAlt, FaTimes } from "react-icons/fa";
 import { demos, Item, navItems, profile } from "@/lib/demo";
 import { GoHome } from "react-icons/go";
 import { CiLogin, CiLogout, CiSignpostDuo1, CiUser } from "react-icons/ci";
@@ -118,6 +118,8 @@ export function getIcon(icon: string) {
       return <CiLogout className="size-7" />;
     case "profile":
       return <CiUser className="size-7" />;
+    case "trash":
+      return <FaRegTrashAlt className="size-6" />;
     default:
       return <MdBubbleChart className="size-7" />;
   }

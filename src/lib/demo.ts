@@ -121,6 +121,10 @@ export const navItems = [
     name: "Categories",
     slug: "categories",
   },
+  {
+    name: "Trash",
+    slug: "trash",
+  },
 ];
 export const profile = [
   {
