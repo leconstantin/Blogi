@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { AiFillDislike, AiFillLike } from "react-icons/ai";
 import {
   FaBookmark,
@@ -28,13 +29,15 @@ export default function PostCard() {
           <div className="text-sm">education</div>
         </div>
         {/* middle content */}
-        <div className="text-justify line-clamp-3 pt-2 text-base text-zinc-300 tracking-wide leading-7 text-balance">
-          Once upon a time, in a small village, there lived a curious cat named
-          Whiskers who loved to explore the world beyond the hills.Whiskers
-          would embark on daily adventures, meeting new friends and discovering
-          hidden treasures. Each day brought a new story, filled with excitement
-          and wonder.
-        </div>
+        <Link href="/blogs/123">
+          <div className="text-justify line-clamp-3 pt-2 text-base text-zinc-300 tracking-wide leading-7 text-balance hover:bg-zinc-900 p-1 rounded-xl">
+            Once upon a time, in a small village, there lived a curious cat
+            named Whiskers who loved to explore the world beyond the
+            hills.Whiskers would embark on daily adventures, meeting new friends
+            and discovering hidden treasures. Each day brought a new story,
+            filled with excitement and wonder.
+          </div>
+        </Link>
 
         {/* actions */}
         <div className="flex justify-between w-full pt-2 border-t-2 border-dashed border-zinc-800 mt-2">
